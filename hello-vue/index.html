@@ -9,18 +9,13 @@
             {{ message }} {{ name }}
         </div>
         <script type="text/javascript">
-            var data = {a : 1};
             var vm = new Vue({
                 el: '#app',
                 data: {
                     message: 'Hello Vue!',
-                    name: data.a
+                    name: 'Vic'
                 }
             });
-            vm.$watch('a', function(newVal, oldVal){
-                console.log(newVal, oldVal);
-            })
-            vm.$data.a = "testing"
         </script>
     </body>
 </html>
